@@ -26,19 +26,16 @@ Você vai precisar do **Node.js** instalado na sua máquina. Para testar o aplic
 ### Instalação
 
 1. Acesse o diretório do projeto no seu terminal:
-
    ```bash
    cd tasks-app-expo
    ```
 
 2. Instale as dependências do projeto:
-
    ```bash
    npm install
    ```
 
 3. Inicie o servidor local do Expo:
-
    ```bash
    npx expo start
    ```
@@ -59,9 +56,8 @@ As requisições (operações CRUD) são feitas no arquivo `src/utils/handle-api
 
 ## 🚀 Deploy com EAS
 
-O Expo Application Services (EAS) é a plataforma de serviços na nuvem oficial da Expo para compilação, distribuição e envio de aplicativos React Native.
+O Expo Application Services (EAS) é a plataforma de serviços na nuvem oficial da Expo para compilação, distribuição e envio de aplicativos React Native. 
 No `eas.json`, utilizamos três perfis de build que alteram o destino do aplicativo:
-
 - **development**: Focado para os desenvolvedores e para o uso do Expo Dev Client, permitindo testar módulos nativos e debugar antes do lançamento.
 - **preview**: Um perfil voltado para testes de homologação/QA interno, provendo uma forma fácil de distribuir versões experimentais sem precisar publicar nas lojas de app.
 - **production**: Utilizado para criar o build final (produção) destinado à App Store e Google Play Store. Possui auto-incremento da versão de distribuição (`autoIncrement: true`).
@@ -71,7 +67,3 @@ Para executar um build de preview focado em um dispositivo Android, utilize o se
 ```bash
 eas build --profile preview --platform android
 ```
-
-## Nota de teste
-
-Teste de commit: 11/06 atv extra.
